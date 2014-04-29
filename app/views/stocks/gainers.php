@@ -80,7 +80,6 @@
 
 $YQL = new \ITP\API\YQL();
 $gainers = $YQL->getGainers($date);
-
 foreach($gainers as $row) {
     echo "<tr>";
 
@@ -134,4 +133,8 @@ foreach($gainers as $row) {
     //}
 
     echo "</tr>";
+
+    if($num == 20) {
+        exit;
+    }
 }

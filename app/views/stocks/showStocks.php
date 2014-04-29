@@ -133,10 +133,10 @@ if(count($stockList) == 0) {
     //Percent Change
     $perChange = @$stockList->ChangeinPercent;
     if($perChange > 0) {
-        echo "<td style='color:green'>" . $perChange . "%" . "</td>";
+        echo "<td style='color:green'>" . $perChange . "</td>";
     }
     else {
-        echo "<td style='color:red'>" . $perChange . "%" . "</td>";
+        echo "<td style='color:red'>" . $perChange . "</td>";
     }
     echo "</tr>";
 
@@ -174,10 +174,10 @@ echo "<tr>";
     //Percent Change
     $perChange = @$row->ChangeinPercent;
     if($perChange > 0) {
-        echo "<td style='color:green'>" . $perChange . "%" . "</td>";
+        echo "<td style='color:green'>" . $perChange . "</td>";
     }
     else {
-        echo "<td style='color:red'>" . $perChange . "%" . "</td>";
+        echo "<td style='color:red'>" . $perChange . "</td>";
     }
     echo "</tr>";
 }
